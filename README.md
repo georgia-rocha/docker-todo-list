@@ -4,7 +4,7 @@ Colocar em prática os assuntos de Docker abordados pela Trybe na primeira sess�
 <summary><strong>‼️ Antes de começar a desenvolver</strong></summary><br />
 <details>
 1. Clone o repositório
-* `git clone git@github.com:tryber/sd-027-b-project-docker-todo-list.git`
+* `git clone git@github.com:georgia-rocha/docker-todo-list.git`
 * Entre na pasta do repositório que você acabou de clonar:
 
 2. Instale as dependências:
@@ -21,7 +21,7 @@ Colocar em prática os assuntos de Docker abordados pela Trybe na primeira sess�
   * Exemplo: `git checkout master`
 * Agora, crie uma branch onde você vai guardar os commits do seu projeto
   * Exemplo:
-    * `git checkout -b joaozinho-sd-027-b-project-docker-todo-list`
+    * `git checkout -b <nome>-project-docker-todo-list`
 </details>
 
 <summary><strong>👨‍💻 O que foi desenvolvido</strong></summary><br />
