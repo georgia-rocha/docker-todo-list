@@ -1,73 +1,24 @@
 ## OBJETIVO
 Colocar em prática os assuntos de Docker abordados pela Trybe na primeira sessão de back-end com aproveitamento de 100%.
 
-<summary><strong>‼️ Antes de começar a desenvolver</strong></summary><br />
 <details>
+<summary><strong>Para clonar e testar</strong></summary><br />
+
 1. Clone o repositório
 * `git clone git@github.com:georgia-rocha/docker-todo-list.git`
 * Entre na pasta do repositório que você acabou de clonar:
 
 2. Instale as dependências:
-  * `npm install`
+* `npm install`
 
-* Verifique se os testes estão executando:
-  * `npm test` (os testes devem rodar e falhar)
-
-3. Crie uma branch a partir da branch `master`
-
-* Verifique que você está na branch `master`
-  * Exemplo: `git branch`
-* Se não estiver, mude para a branch `master`
-  * Exemplo: `git checkout master`
-* Agora, crie uma branch onde você vai guardar os commits do seu projeto
-  * Exemplo:
-    * `git checkout -b <nome>-project-docker-todo-list`
+3. Verifique se os testes estão executando:
+  * `npm test`
+  
 </details>
 
-<summary><strong>👨‍💻 O que foi desenvolvido</strong></summary><br />
 <details>
-1. **_Conteinerizações_** de aplicações;
-2. Criação de uma conexão entre elas;
-3. Orquestrando seu funcionamento.
-
-Temos [uma aplicação full-stack](docker/todo-app) neste repositório: um **aplicativo de tarefas**! Esta aplicação precisou ser conteinerizada para funcionar. Foi necessário desenvolver os arquivos de configuração para cada frente específica: `Front-end`, `Back-end` e, no nosso caso, para um aplicativo de `teste` que valida se as aplicações estão se comunicando.
-
----
-
-Necessário criar as imagens para as aplicações e configurar essas imagens com o `docker-compose`.
-
-Para isto, foi utilizado uma série de comandos do `docker` com diferentes níveis de complexidade.
-
-Cada comando foi escrito em seu próprio arquivo.
-
-Para isto, foi preciso seguir os seguintes passos:
-
-1. Ler o requisito e criar um arquivo chamado `commandN.dc` no diretório `docker-commands`, onde `N` é o número do requisito. Por exemplo:
-
-    ```text
-    Requisito 1: ./docker/docker-commands/command01.dc
-    Requisito 2: ./docker/docker-commands/command02.dc
-    Requisito 3: ./docker/docker-commands/command03.dc
-    ```
-    **⚠️ É muito importante que os seus arquivos tenham exatamente estes nomes! ⚠️**
-
-
-2. Escrever neste arquivo o comando do CLI *(Interface de Linha de Comando)* do Docker que resolve o requisito. Um exemplo de como vai ficar seu arquivo:
-
-    ```dc
-    docker network inspect bridge
-    ```
-
----
-
-Os arquivos principais do projeto estão na pasta `docker`, na raiz do projeto. Nela estão contidos:
-
-1. Pasta `docker-commands`: onde ficarão os comandos exigidos pelos requisitos;
-  
-2. Pasta `todo-app`: onde fica a nossa **pseudo-aplicação**, que servirá como base para nossos `Dockerfile`s e `Compose`;
-
-Quando for necessário fazer a orquestração das aplicações, o arquivo `docker-compose.yml` deverá ser criado na pasta `./docker`. conforme o arquivo de exemplo [`docker/docker-compose.yml.example`](docker/docker-compose.yml.example).
-
+<summary><strong>👨‍💻 O que foi desenvolvido</strong></summary><br />
+Foi desenvolvido uma conteinerização de uma aplicação full-stack, onde foi necessário desenvolver arquivos de configuraçãi para cada frente específica: 'Front-end', 'Back-end' e um app de 'teste' que valida se as aplicações estão se comunicando.
 </details>
 
 # 100% dos Requisito Obrigatórios
